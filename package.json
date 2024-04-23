@@ -3,20 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "next": "14.2.2",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.2"
+    "react-hook-form": "^7.51.3"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "@types/mailchimp__mailchimp_marketing": "^3.0.20",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18",
+    "typescript": "^5.4.5"
   }
 }
