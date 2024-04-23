@@ -16,11 +16,11 @@ export default function Page() {
       justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      fontFamily: 'Work Sans, sans-serif'  // Setting the font family here
+      fontFamily: 'Work Sans, sans-serif'
   }}>
       <main className={styles.main}>
-        <h1 style={{ marginBottom: '0.5rem' }}>Artlet</h1>  {/* Reduced bottom margin */}
-        <h3 style={{ marginTop: '0' }}>Discover, Connect, Collect!</h3>  {/* Removed top margin */}
+        <h1 style={{ marginBottom: '0.5rem' }}>Artlet</h1> 
+        <h3 style={{ marginTop: '0' }}>Discover, Connect, Collect!</h3> 
         <SubscribeForm />
       </main>
     </div>
