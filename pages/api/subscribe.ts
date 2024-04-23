@@ -43,7 +43,7 @@ export default async function handler(
   }
 
   try {
-    const listId = "0313cdf088";
+    const listId = "a61f51ba52";
     const response = await mailchimp.lists.addListMember(listId, {
         email_address: email,
         status: 'subscribed',
