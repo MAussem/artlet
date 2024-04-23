@@ -86,7 +86,7 @@ export default function SubscribeForm() {
 
 
       </form>
-      <Grid container justifyContent="space-evenly" style={{ marginTop: 20  }}>
+      {/* <Grid container justifyContent="space-evenly" style={{ marginTop: 20  }}>
         <IconButton aria-label="facebook" onClick={() => window.location.href = 'https://facebook.com'} style={{
             backgroundColor: 'rgb(84, 41, 201)', 
             color: 'white',
@@ -111,7 +111,7 @@ export default function SubscribeForm() {
         }}>
           <InstagramIcon />
         </IconButton>
-      </Grid>
+      </Grid> */}
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose} message="Thank you for subscribing!" />
     </div>
   );
