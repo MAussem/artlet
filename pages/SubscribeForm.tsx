@@ -4,6 +4,7 @@ import { Button, TextField, Snackbar, Grid, IconButton } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import styles from '../app/page.module.css';
 
 export default function SubscribeForm() {
   const [email, setEmail] = useState('');
@@ -52,7 +53,7 @@ export default function SubscribeForm() {
       <img 
         src="/logo.png" 
         alt="Company Logo" 
-        style={{ width: 320, height: 320, margin: 'auto', marginTop: -170, display: 'block' }} 
+        className={styles.logo}
       />
       <form onSubmit={handleSubmit} noValidate >
         <TextField

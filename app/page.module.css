@@ -3,8 +3,16 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 4.5rem;
   min-height: 100vh;
+}
+
+.logo {
+  width: 320px;
+  height: 320px;
+  margin: auto;
+  display: block;
+  margin-top: -170px;  /* Adjust based on your layout */
 }
 
 .description {
@@ -105,9 +113,6 @@
   transform: translateZ(0);
 }
 
-.logo {
-  position: relative;
-}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -130,6 +135,23 @@
 @media (max-width: 700px) {
   .content {
     padding: 4rem;
+  }
+
+  .main h1, .main h3 {
+    font-size: 1.2rem; /* Smaller text on smaller devices */
+  }
+  .main h3 {
+    font-size: 1rem;
+  }
+
+  .form input, .form button {
+    width: 90%;  /* Slightly smaller width to ensure they fit within the screen */
+  }
+
+  .logo {
+    width: 200px;  /* Smaller logo on smaller screens */
+    height: 200px;
+    margin-top: -120px;  /* Less negative margin as the logo is smaller */
   }
 
   .grid {
@@ -204,19 +226,14 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 701px) and (max-width: 1620px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
-}
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
   .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+    width: 200px;  /* Smaller logo on smaller screens */
+    height: 200px;
+    margin-top: -100px;  /* Less negative margin as the logo is smaller */
   }
 }
 
