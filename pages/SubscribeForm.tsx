@@ -113,7 +113,7 @@ export default function SubscribeForm() {
           <InstagramIcon />
         </IconButton>
       </Grid> */}
-      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose} message="Thank you for subscribing!" />
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose} message="Thank you for subscribing! You will receive an email soon!" />
     </div>
   );
 }
