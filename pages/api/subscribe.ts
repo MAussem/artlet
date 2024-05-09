@@ -2,10 +2,11 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import mailchimp from '@mailchimp/mailchimp_marketing';
 
 const apiKey = process.env.MAILCHIMP_API_KEY;
+const apiServer = process.env.MAILCHIMP_API_SERVER;
 
 mailchimp.setConfig({
   apiKey: apiKey,
-  server: `us7`  // Correct server address
+  server: apiServer
 });
 
 interface SubscribeRequest {
