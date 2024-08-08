@@ -1,6 +1,7 @@
 import React from 'react';
 import SubscribeForm from '../pages/SubscribeForm';
 import styles from './page.module.css';
+import FooterLinks from '../pages/FooterLinks';
 
 
 export default function Page() {
@@ -22,6 +23,7 @@ export default function Page() {
         <h1 style={{ marginBottom: '0.5rem' }}>Artlet</h1> 
         <h3 style={{ marginTop: '0' }}>Discover, Connect, Collect!</h3> 
         <SubscribeForm />
+        <FooterLinks />
       </main>
     </div>
   );
